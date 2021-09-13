@@ -48,7 +48,7 @@ const updatePrice = (id, value) => {
   document.getElementById(id).innerText = total;
 };
 
-// set innerText function
+// Set innerText function
 const setInnerText = (id, value) => {
   document.getElementById(id).innerText = Math.round(value);
 };
