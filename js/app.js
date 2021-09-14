@@ -19,12 +19,14 @@ const showProducts = (products) => {
       <p>Category: ${product.category}</p>
       <p class="card-text">Rating: <span class="icon-color mx-1"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i></span> ${product.rating.rate} <i class="bi bi-person-fill"></i> (${product.rating.count})</p>
       <h4>Price: $ ${product.price}</h4>
-      <button onclick="addToCart(${product.id},${product.price})" id="addToCart-btn" class="buy-now btn btn-info shadow-none">Add to Cart</button>
-      <button id="details-btn" class="btn btn-warning shadow-none">Details</button></div>
+      <button onclick="addToCart(${product.id},${product.price})" id="addToCart-btn" class="buy-now btn btn-info text-white fw-bold shadow-none">Add to Cart</button>
+      <button id="details-btn" class="btn btn-secondary text-white fw-bold shadow-none">Details</button></div>
       `;
     document.getElementById("all-products").appendChild(div);
   }
 };
+
+// add to cart function
 let count = 0;
 const addToCart = (id, price) => {
   count = count + 1;
@@ -35,6 +37,7 @@ const addToCart = (id, price) => {
   updateTotal();
 };
 
+// get input value function
 const getInputValue = (id) => {
   const element = document.getElementById(id).innerText;
   const converted = parseFloat(element);

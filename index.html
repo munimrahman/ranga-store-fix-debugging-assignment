@@ -38,27 +38,22 @@
   </header>
   <!-- Navbar Ends -->
   <main class="main container">
-    <!-- <div class="search-field">
-      <div class="search-box rounded-pill d-flex justify-content-between">
-        <input id="input-field" class="search-field" type="text" />
-        <button type="button" class="btn btn-primary search-button shadow-none rounded-pill" data-toggle="button"
-          aria-pressed="false" autocomplete="off" id="search-btn" onclick="loadProducts()">
-          Search
-        </button>
-      </div>
-    </div> -->
+    <!-- Search Field Starts -->
     <div id="input" class="input-group w-50 mx-auto mb-3 search-field">
       <input id="search-text" type="text" class="form-control shadow-none" placeholder="Search Your Products Here..."
         aria-label="Your Book Name" aria-describedby="button-addon2">
       <button onclick="loadData()" class="btn btn-outline-primary shadow-none" type="button" id="search-button"
         onclick="loadProducts()">Search</button>
     </div>
+    <!-- Search Field Ends -->
     <div class="row">
+      <!-- Product Section -->
       <div class="col-md-9 col-lg-9 col-sm-7">
         <div id="all-products" class="">
-          <!-- <h1></h1> -->
+          <!-- Product Showcase -->
         </div>
       </div>
+      <!-- My Cart Section Starts -->
       <div class="col-md-3 col-lg-3 col-sm-5 cart-main">
         <div class="cart" id="my-cart">
           <table class="table">
@@ -108,8 +103,10 @@
           </div>
         </div>
       </div>
+      <!-- Search Field Starts -->
     </div>
   </main>
+  <!-- Footer Section -->
   <footer></footer>
 
   <!-- add javascript  file  -->
